@@ -1,8 +1,8 @@
-package saimen;
+package saimen1;
 
 import java.util.Scanner;
 
-public class BakeryMenu extends BakeryDetails {
+public class BakeryMenu4 extends BakeryDetails4 { //subclass
 
 	Scanner scan = new Scanner(System.in);
 	private String category;
@@ -12,11 +12,16 @@ public class BakeryMenu extends BakeryDetails {
 	private double price;
 	private int choice;
 	
-	BakeryMenu(){
-	    System.out.println("***Shop Menu***");
-		System.out.println("Select item : ");
+	BakeryMenu4(){
+		System.out.println("---Bakery Menu---");
+		System.out.println("\nThere are 6 category of food.");
+		do {
+		System.out.println("\n1-Cake \n2-Bread \n3-Cookies \n4-Pizza \n5-Muffin \n6-Donut");
+		System.out.println("Please select the menu to see the details : ");
 		int option = scan.nextInt();
 		switch(option) {
+		
+	    
 	
 		case 1 : this.category = "Cake";
 		 System.out.println("*** "+ category +" ***");
@@ -106,9 +111,9 @@ choice = scan.nextInt();
 if(choice != 1 && choice != 2) {
 	System.out.println("Choose only \n1-Continue Checking Details \n2-Exit ");
 	choice = scan.nextInt();
-
+}
 }while(choice == 1); {
-	System.out.println("Thankyou for visiting " +super.name);
+	System.out.println("Thankyou " +super.name);
 }
 }
 
