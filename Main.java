@@ -1,8 +1,8 @@
-package saimen;
+package saimen1;
 
 import java.util.Scanner;
 
-public class Main {
+public class Main4 {
 	
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
@@ -19,7 +19,7 @@ public class Main {
 		         System.out.println("\n1.Finance System ");
 		         opt = scan.nextInt();
 		         switch(opt) {
-		         case 1 :Finance em = new Finance();
+		         case 1 :Finance4 em = new Finance4();
 		        	 	 System.out.println(em);break;
 		         
 		         }
@@ -30,13 +30,13 @@ public class Main {
 		         
 		case 2 :do { 
 				 System.out.println("** Welcome to the bakery **");
-        		 System.out.println("\n1.Bakery details \n2.Bakery Menu \n3.Exit");
+        		 System.out.println("\n1.Billing System \n2.Bakery Menu \n3.Exit");
                  System.out.println("Please select your option : ");
                  opt = scan.nextInt();
                  switch(opt) {
-                 case 1 :BakeryDetails d = new BakeryDetails();
-                 		 System.out.println(d);break;
-                 case 2 :BakeryMenu ad = new BakeryMenu();
+                 case 1 :BillingSystem b = new BillingSystem();
+                 		 System.out.println(b);break;
+                 case 2 :BakeryMenu4 ad = new BakeryMenu4();
                 	 	 System.out.println(ad);break;
                 	 	 
                  }
