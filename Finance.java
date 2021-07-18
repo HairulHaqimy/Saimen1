@@ -1,8 +1,8 @@
-package saimen;
+package saimen1;
 
 import java.util.Scanner;
 
-public class Finance extends BakeryDetails{
+public class Finance4 extends BakeryDetails4{ //subclass
 	
 	Scanner scan = new Scanner(System.in);
 	
@@ -14,7 +14,7 @@ public class Finance extends BakeryDetails{
 	private double netincome;
 	
 
-	Finance() {
+	Finance4() {
 		System.out.println("***Finance System***");
 		Sales();
 		NetIncome();
@@ -24,7 +24,7 @@ public class Finance extends BakeryDetails{
 	public void Sales() {
 		System.out.print("\nTotal Sales per month :  RM ");
 		this.totalsales = scan.nextDouble();
-		System.out.print("\nTotal Stock cost per month :  RM ");
+		System.out.print("\nTotal Inventory per month :  RM ");
 		this.totalcost = scan.nextDouble();
 		this.profit = this.totalsales - this.totalcost;
 		if(profit<0) {
